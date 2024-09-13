@@ -11,30 +11,61 @@
         <h1>Booker's Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="Educational Background"> Education Background</a></li>
-                <li><a href="#projects">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#interests"> Interests</a></li>
-            </ul>
+               
+               <section class="content">
+                <div class="container-item">
+                    <h2><a href="#about me"> About Me</a></h2>
+                </div>
+                </section>
+
+                <section class="content">
+                    <div class="container-item">
+                        <h2><a href="#Educational-Background"> Educational Background</a></h2>
+                    </div>
+                    </section>  
+
+                
+                <section class="content">
+                    <div class="container-item">
+                        <h2><a href="#Projects"> Project</a></h2>
+                    </div>
+                    </section> 
+
+                <section class="content">
+                    <div class="container-item">
+                        <h2><a href="#Contact"> Contact</a></h2>
+                    </div>
+                    </section> 
+
+                    <section class="content">
+                    <div class="container-item">
+                        <h2><a href="#interests"> Interests</a></h2>
+                    </div>
+                    </section>      
+                
+                </ul>
+        </section>
         </nav>
     </header>
 
-    <section id="about">
+    <section class="about">
         <h2>About Me</h2>
+       
         <p> I'm a passionate and motivated junior software developer excited about building impactful and creative web applications. My journey started with a love for problem-solving and technology, I have gained a solid foundation in HTML and CSS.
             I’m currently enhancing my skills in front-end development and exploring frameworks, while also practicing with version control using Git and GitHub. My goal is to build intuitive, responsive applications that improve user experiences.
             Outside of coding, I enjoy tech meetups, reading blogs, and participating in coding challenges. I'm eager to continue learning and contributing to innovative projects in the software development community!</p>
     </section>
 
+    <div class="container"></div>
     <section id="education background">
-        <h2>Education Background</h2>
-        
-        <div class="education-item">
+        <h2>🎓 Educational Background</h2>
+                <div class="education-item">
             <h3>Diploma in Software Development</h3>
             <p><strong>Kenya Institute of Software Engineering</strong></p>
             <p>2020 – 2022</p>
             <p>Diploma in software development.</p>
+            </div>
+                         
         </div>
         
         <div class="education-item">
@@ -45,6 +76,7 @@
                 Building project such as personal portfolio.</p>
         </div>
         
+        
             </section>
 
             <section id="interests">
@@ -53,15 +85,31 @@
                            
                 <ul>
                     <li>Coding Challenges and Hackathons</li>
+                    <div class="interest-item">
+                        <img src="hackathon image.png" alt="hackerthon Icon" height="150" width="150">
+                        <div class="hackerthon-link"></div>
+                        <a href="Coding Challenges and Hackathons" download>View Coding challenges & Hackathons</a>
+                </div>
                     <li>Open Source Contributions</li>
+                    <img src="opensource.png" alt="Open Source Icon">
+                    <div class="Open source contributions-link"></div>
+                        <a href="Open Source Contributions" download>View Open Source Contributions</a>
+                </div>
                     <li>Tech Blogging and Writing</li>
+                    <img src="tech blogging.png" alt="Tech Blogging Icon">
+                    <div class="Tech Blogging and Writing-link"></div>
+                        <a href="Tech Blogging and Writing" download>View Tech Blogging and Writing</a>
+                </div>
                     <li>Reading Tech Books and Articles</li>
-                    <li>Traveling and Exploring New Cultures</li>
-                    <li>Photography</li>
+                    <img src="techbooks.png" alt="techbooks Icon">
+                    <div class="Reading Tech Books and Articles-link"></div>
+                        <a href="Reading Tech Books and Articles" download>View Reading Tech Books and Articles</a>
+                </div>
+                    
                 </ul>
            </div>
             </section>
-
+            
     <section id="projects">
         <h2>Project</h2>
         <div class="project">
@@ -70,6 +118,7 @@
                 The website is fully responsive, adapting seamlessly to different screen sizes, including mobile and tablet devices. 
                 It features a homepage, an "About Me" section, a showcase of project, and a contact form integrated with Formspree for email submissions. 
                 The site demonstrates my understanding of responsive web design and CSS Flexbox.</p>
+                <a href="https://github.com/jayady143/booker's portfolio" target="_blank">Booker's Project view it here</a> 
                 <a href="#"> View on Github</a>
                 <section id="Curriculum Vitae"></section>
                 <div class="container">
@@ -79,7 +128,7 @@
                     <a href="#"> View on Github</a>
                 </div>
         </div>
-        <!-- Add more projects as needed -->
+       
     </section>
 
     <section id="contact">
@@ -87,6 +136,13 @@
         <P>Phone No: +254 789 574 676</P>
         <p>Email: juddiebt20@gmail.com</p>
         <p>LinkedIn: <a href="#">linkedin.com/in/juddie-booker-b539701b3</a></p>
+        
+            <form action="#" method="GET"></form>
+                <label for="Ask">Ask Me:</label>
+                <input type="text" id="ask" name="ask" placeholder="Type here...">
+                <input type="submit" value="Go">
+            </form>
+           
     </section>
 
     <footer>

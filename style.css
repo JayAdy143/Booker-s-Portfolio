@@ -1,11 +1,10 @@
-/* Basic reset for margin and padding */
+/* reset for margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Basic body styling */
+/* body styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -26,13 +25,32 @@ header h1 {
     font-size: 2.5em;
 }
 
+.content {
+    display:flex 1 1 1 1;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    padding:0px;
+}
+.container-item {
+    flex:1 1 1 30%;
+    padding:0px;
+    margin: 0px;
+    min-width:0px;
+    background-color:yellowgreen;
+    color:aqua;
+    text-align:center;
+}
+
 nav ul {
     list-style: none;
+    padding:0;
+    margin:0;
+    
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 10 0px;
 }
 
 nav ul li a {
@@ -40,16 +58,117 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li form {
+    display: inline-block;
+}
+
+nav ul li input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+nav ul li input[type="submit"] {
+    background-color: #4CAF50;
+    color: red;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav ul li input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+h1 {
+    text-align: center;
+}
+.cv-link {
+    text-align: center;
+    margin-top: 20px;
+}
+.cv-link a {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.cv-link a:hover {
+    background-color: #45a049;
+}
+
+/* Section Styling */
 section {
     margin: 20px 0;
     padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Project section styling */
-#projects .project {
+/* Interests Section */
+#interests ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#interests li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#interests img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* Projects Section */
+.project {
+    margin-bottom: 20px;
+}
+
+.project p {
+    font-size: 16px;
+}
+
+.project a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* CV Section */
+#cv a {
+    text-decoration: none;
+    color: #28a745;
+    margin-right: 10px;
+}
+
+#cv a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #interests img, #projects img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #projects .project {
     margin-bottom: 20px;
 }
 
@@ -57,7 +176,7 @@ section {
     color: #333;
 }
 
-/* Footer styling */
+
 footer {
     text-align: center;
     margin-top: 20px;
@@ -79,9 +198,7 @@ footer {
     section {
         padding: 10px;
     }
-}
 
-/* Education section styling */
 #education {
     margin: 40px 0;
 }
@@ -116,7 +233,6 @@ footer {
     color: #333;
 }
 
-/* Interests section styling */
 #interests {
     margin: 40px 0;
 }
